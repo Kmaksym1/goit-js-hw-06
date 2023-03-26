@@ -1,16 +1,15 @@
-const textEl = document.querySelector('input')
-
+const textEl = document.getElementById('validation-input')
+console.dir(textEl)
 textEl.addEventListener("blur", onInput);
 
 function onInput (event) {
-    let setLength = textEl.getAttribute('data-length')
+    let setLength = Number(textEl.dataset.length)
     let currentLength = event.currentTarget.value.length
-    if(  currentLength < setLength){
-        textEl.classList.add('invalid')
-    } else{
+    if(  currentLength === setLength){
         textEl.classList.add('valid')
-
+        textEl.classList.remove('invalid')
+    } else{
+    textEl.classList.remove('valid')        
+textEl.classList.add('invalid')
     }
   }
-  
-
