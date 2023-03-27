@@ -32,10 +32,5 @@ function createBoxes(){
 destroyEl.lastElementChild.addEventListener('click', destroyBoxes)
 
 function destroyBoxes(){
-// let allNewDiv = document.querySelectorAll('.block')
-// allNewDiv.forEach( e => e.remove() )
 boxesEl.innerHTML = '';
 }
-
-//открываю ссылку git в google - работает, 
-// почему в safari не работает задание №10?

@@ -5,9 +5,9 @@ console.dir(nameOutputEl)
 
 nameInputEl.addEventListener('input', onInput)
 function onInput(event){
-
-    if(event.currentTarget.value.length>0){
-        nameOutputEl.textContent = event.currentTarget.value
+    let string = event.currentTarget.value.trim()
+    if(string.length>0){
+        nameOutputEl.textContent = string
     }else{
         nameOutputEl.textContent = "Anonymous!"
     }
