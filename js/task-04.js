@@ -6,7 +6,6 @@ let counterValue = 0;
 counterEl.firstElementChild.addEventListener('click', countpluse)
 function countpluse(event){
     counterResultEl.textContent = `${counterValue += 1}`
-    console.dir (event)
 }
 
 counterEl.lastElementChild.addEventListener('click', countminuse)

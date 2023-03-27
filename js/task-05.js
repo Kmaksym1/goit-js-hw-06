@@ -11,6 +11,6 @@ function onInput(event){
     }else{
         nameOutputEl.textContent = "Anonymous!"
     }
-    console.log (event.currentTarget.value.length)
+    
 }
 
