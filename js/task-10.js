@@ -11,8 +11,7 @@ const boxesEl = document.querySelector('#boxes')
 inputEl.addEventListener('input', onInput)
 
 function onInput(event){
-  let userInputNumber = Number(event.currentTarget.value)
-  createEl.dataset.create = userInputNumber
+  createEl.dataset.create = Number(event.currentTarget.value)
 }
 
 createEl.addEventListener('click', createBoxes)
@@ -38,3 +37,5 @@ function destroyBoxes(){
 boxesEl.innerHTML = '';
 }
 
+//открываю ссылку git в google - работает, 
+// почему в safari не работает задание №10?
